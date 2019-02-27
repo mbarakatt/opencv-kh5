@@ -19,30 +19,12 @@ int main(int argc, char** argv )
         return -1;
     }
 
-    namedWindow("Display Image", WINDOW_FREERATIO);
+    namedWindow("Display Image", WINDOW_AUTOSIZE);
     imshow("Display Image", image);
 
+	cout << "Tapper q pour quitter" << endl;
 	// source (réponse de louis) : https://stackoverflow.com/questions/15028244/opencv-restrict-cvwaitkey-to-only-one-wait-for-one-specific-key
 	while((cv::waitKey() & 0xEFFFFF) != (int)'q');
     return 0;
 }
-
-/* #include <iostream> */
-/* //Ce fichier d'en-tête contient les éléments et structures de base */
-/* #include <opencv2/core/core.hpp> */
-/* // Ce fichier d'en-tête contient les éléments nécessaires pour l'affichage à l'écran */
-/* #include <opencv2/highgui/highgui.hpp> */
-
-/* using namespace cv;  // L'espace de nom pour accéder aux classes */
-
-/* int main() */
-/* { */
-/* // La classe Mat est la classe principale qui représente une image */
-
-/*    	Mat ImgSource; */
-
-/*    	return 0; */
-
-/* } */
-
 
