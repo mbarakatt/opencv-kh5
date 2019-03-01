@@ -1,3 +1,4 @@
+// Source: https://docs.opencv.org/master/db/df5/tutorial_linux_gcc_cmake.html
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 using namespace cv;
